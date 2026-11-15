@@ -1,0 +1,41 @@
+{
+  "bin": {
+    "modelrelay": "dist/cli.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1",
+    "zod": "^4"
+  },
+  "description": "A local stdio bridge to the hosted Synap MCP service: chat completions on open AI models, a live model catalogue with prices, full detail for one model and cost estimates. One bin serves a small CLI and the MCP server.",
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "server.json"
+  ],
+  "homepage": "https://github.com/CloudCorpRecords/modelrelay#readme",
+  "license": "MIT",
+  "mcpName": "io.github.CloudCorpRecords/modelrelay",
+  "name": "@reneturcios/modelrelay",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloudCorpRecords/modelrelay.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}
